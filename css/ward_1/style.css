@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: black;
+}
+
+.main {
+    height: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 25%;
+    background-color: burlywood;
+}
+
+.flex-bottom {
+    display: flex;
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 75%;
+}
+
+.left {
+    flex:1;
+    height: 100%;
+    background-color: cadetblue;
+}
+
+
+
+.right {
+    flex:2;
+    height: 100%;
+    background-color: chocolate;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.patient {
+    /* flex: 16.5%; */
+    background-color: darkgray;
+    padding: 2px;
+    border: 1px black solid;
+    height: 16.6%;
+}
+
+.hidden {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.patient-info {
+    margin: 5px;
+    background-color: whitesmoke;
+    height: calc(100% - 10px);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.waiting-container {
+    height: 100%;
+    background-color: rgb(131, 131, 131);
+    padding: 5px;
+    display: flex;
+}
+
+.waiting {
+    background-color: rgb(255, 255, 255);
+    color: black
+}
+
+.patient-waiting {
+    flex: 1;
+}
+
+.ward-buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ward-buttons-container button {
+    flex: 1;
+    font-size: 0.6rem;
+}
+
+.left.flex-container {
+    flex-direction: column;
+}
+
+.specialist {
+    background-color: brown;
+}
+
+@media screen and (min-width: 667px) {
+    .top {
+      background-color: lightgreen;
+    }
+
+    .right {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .patient {
+        /* flex: 33%; */
+        height: 33.3%;
+        width: 50%;
+    }
+
+    .right {
+        flex: 3;
+    }
+
+    .ward-buttons-container button {
+        font-size: 1rem;
+    }
+
+
+  }
